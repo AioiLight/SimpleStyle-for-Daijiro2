@@ -5,7 +5,7 @@ SimpleStyleの画像を使用しています ( https://github.com/AioiLight/TJAP
 
 また太鼓さん次郎2でも利用することが可能です(未検証)。
 
-Android版Ver.1.1.6で動作確認済です。iOS版でも動作するかは確認していません。
+Android版Ver.1.1.6(Android Oreo)で動作確認済です。iOS版でも動作するかは確認していません。
 
 全て自己責任でお願いします。
 
