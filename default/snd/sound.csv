@@ -1,0 +1,14 @@
+// ドン,,ファイル名
+#SE,DONG,taiko/dong.wav
+
+//カツ
+#SE,KA,taiko/ka.wav
+#SE,BALLOON,taiko/balloon.wav
+
+//風船破裂
+//コンボ音声,,ファイル名,コンボ数
+//#SE,COMBOVOICE,50combo.wav,50
+//以降必要数だけ増やしていく
+
+//フルコンボ音声,,ファイル名,(未使用),最後の音符からの経過時間(ms)
+//#SE,FULLCOMBOVOICE,fullcombo.wav,,1000

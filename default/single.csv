@@ -1,0 +1,122 @@
+// 分割した他のCSVファイルを読む
+#INCLUDE,result.csv
+
+// 色は#COLOR以降に読み込んだ画像に反映されます（乗算）
+// 色,r,g,b,a
+#COLOR,255,255,255,255
+
+// 背景のスクロールスピード
+#BGSCROLLSPEED,0
+
+// 背景（スクロール）,,ファイル名,x,y,描画幅,描画高さ
+#PARTS,BG,img/bg.png,,,1280,720
+
+// 音符を叩いた後,（0:その場で消える 1:バウンドする）,バウンドする高さ
+#NOTEBOUND,1,372
+
+// 音符,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,NOTE,img/notes.png,,,135,135,15,1
+
+// ドンカツ表示,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,SENOTE,img/senotes.png,,,,,12,1
+
+// ドンカツ表示帯,,ファイル名,x,y
+#PARTS,SENOTE_HR,img/hr_senotes.png,806,337
+
+// 曲タイトル,,フォント名（未使用）,x,y,（未使用）,フォントサイズ,文字太さ,縁太さ,縁色 r,縁色 g,縁色 b,縁色 a
+#FONT,SONGTITLE,,1260,38,,46,2,4
+// 曲名帯,,ファイル名,x,y
+#PARTS,SONGTITLE_HR
+
+// スクロール領域,,ファイル名,x,y,描画幅,描画高さ
+#PARTS,SFIELD,img/sfieldbg.png,806,257,947,130
+#PARTS,SFIELD_GOGO,img/sfieldbg_gogo.png
+#PARTS,SFIELD_RED,img/sfieldflash_red.png
+#PARTS,SFIELD_BLUE,img/sfieldflash_blue.png
+#PARTS,SFIELD_YELLOW,img/sfieldflash_yellow.png
+//判定位置（スクロール領域の左端からの距離）,x
+#TARGETAREA,75
+
+// 小節線,,ファイル名,x,y,描画幅,描画高さ
+#COLOR,255,255,255,255
+#PARTS,BARLINE,,,,1
+
+#COLOR,255,255,0,255
+#PARTS,BARLINE_BRANCH,,,,3
+#COLOR,255,255,255,255
+// ミニ太鼓,,ファイル名,x,y,描画幅,描画高さ
+#PARTS,MTAIKO,img/mtaiko.png,266,272,152,164
+#PARTS,MTAIKO_RED,img/mtaikoflash_red.png,,152,164
+#PARTS,MTAIKO_BLUE,img/mtaikoflash_blue.png,,152,164
+#ANIMINTERVAL,50
+// ゴーゴー炎,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,GOGOFIRE,img/fire.png,,,,,7,1
+#PARTS,JUDGE,img/judgement.png,,770,90,60,1,3
+#ANIMINTERVAL,200
+
+// 爆発,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,EXPLOSION_UPPER_GREAT,img/explosion_upper_great.png,,,,,1,1
+#PARTS,EXPLOSION_UPPER_GREAT_LARGE,img/explosion_upper_great.png,,,,,1,1
+#PARTS,EXPLOSION_UPPER_GOOD,img/explosion_upper_good.png,,,,,1,1
+#PARTS,EXPLOSION_UPPER_GOOD_LARGE,img/explosion_upper_good.png,,,,,1,1
+#ANIMINTERVAL,200
+
+// 数字の跳ね率,X幅（未使用）,Y幅
+#STRETCHRATE,0.8,1
+// 数字の文字間隔
+#NUMBERSPACING,0.85
+
+// スコア数字,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,NUMBER_SCORE,img/font_m.png,156,208,24,40,12,7
+#COLOR,255,100,40,255,,,,,
+// スコア数字（獲得点表示）,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,NUMBER_ADDSCORE,img/font_m.png,160,168,,,12,7
+#PARTS,NUMBER_COMBOBONUS,img/font_m.png,160,148,,,12,7
+
+//コンボ数字（LARGEは100コンボ以降）,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#COLOR,255,255,255,255
+#PARTS,NUMBER_COMBO,img/combonumber.png,,252,42,48,10,1
+#PARTS,NUMBER_COMBO_LARGE,img/combonumber_big.png,,252,42,56,10,1
+
+// 黄色連打,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,BALLOON_ROLL,img/rollballoon.png,398,100
+#PARTS,NUMBER_ROLL,img/combonumber_balloon.png,390,100,,,10,1
+
+// ゲキ連打
+#PARTS,BALLOON_BURST,img/burstballoon.png,378,100
+#PARTS,NUMBER_BURST,img/combonumber_balloon.png,390,100,,,10,1
+
+// 芋連打
+#PARTS,BALLOON_POTATO,img/potatoballoon.png,378,100
+#PARTS,NUMBER_POTATO,img/combonumber_balloon.png,390,100,,,10,1
+
+// 分岐バルーン,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,BALLOON_BRANCH,img/branchballoon.png,100,78,,,1,2
+
+#STRETCHRATE,1,1
+#ANIMINTERVAL,50
+
+// 音符を叩いたときに出てくるキャラクター,（最下段はミス時）,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,RUNNER,img/runner.png,,,60,125,48,5
+#ANIMINTERVAL,70
+
+// ノルマゲージが増える単位(未実装)
+#NORMAGROWWIDTH,27
+// ノルマゲージ
+#PARTS,NORMAGAUGE,img/normagauge.png,820,168,702,,1,4
+#ANIMINTERVAL,35
+
+// 魂,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,SOUL,img/soul.png,,,,,9,1
+#ANIMINTERVAL,30
+
+// ゴーゴータイム突入時スプラッシュ,,ファイル名
+#PARTS,SPLASH_PARTICLE,img/gogosplash_particle.png
+
+// プレイヤーキャラ,,ファイル名,x,y,描画幅,描画高さ,横マス数,縦マス数
+#PARTS,PLAYERCHAR,img/playerchar_p1.png,156,74,1,1,1,1
+
+// 分岐レイヤー,,ファイル名
+#PARTS,BRANCH_NORMAL,img/normallayer.png
+#PARTS,BRANCH_EXPERT,img/expertlayer.png
+#PARTS,BRANCH_MASTER,img/masterlayer.png

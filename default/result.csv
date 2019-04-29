@@ -1,0 +1,30 @@
+// 曲タイトル,,フォント名（未使用）,x,y,（未使用）,フォントサイズ,文字太さ,縁太さ,縁色 r,縁色 g,縁色 b,縁色 a
+#FONT,RESULT_SONGTITLE,,1260,38,1,46,2,4
+
+// リザルト画面移行帯,,ファイル名
+#PARTS,RESULT_BLIND,img/blind_result.png
+
+// リザルト背景（クリア、非クリア）,,ファイル名,x,y,描画幅,描画高さ
+#PARTS,RESULT_BG_CLEAR,img/resultbg_clear.png,640,360,1280,720
+#PARTS,RESULT_BG_FAILURE,img/resultbg_failure.png,640,360,1280,720
+
+// リザルト板,,ファイル名,x,y,描画幅,描画高さ
+#PARTS,RESULT_BOARD_P1,img/resultboard_p1.png,880,230
+#PARTS,RESULT_GAUGE_P1,img/resultgauge.png,919,147,500,,6,2
+
+// スコア,,（未使用）,x,y
+#PARTS,RESULT_SCORE_P1,,733,273
+
+// GREAT
+#PARTS,RESULT_GREAT_P1,,946,208
+// GOOD
+#PARTS,RESULT_GOOD_P1,,946,246
+// BAD
+#PARTS,RESULT_BAD_P1,,946,288
+// 最大コンボ
+#PARTS,RESULT_MAXCOMBO_P1,,1226,208
+// 連打数
+#PARTS,RESULT_ROLL_P1,,1226,246
+
+// 叩けた率
+#PARTS,RESULT_RATE_P1,,0,1080

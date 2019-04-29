@@ -1,0 +1,14 @@
+// 曲選択フォント,,フォント名（未使用）,（未使用）,（未使用）,（未使用）,フォントサイズ,文字太さ,縁太さ,縁色 r,縁色 g,縁色 b,縁色 a
+#FONT,SONGSELECT_SONGTITLE,,,,,20,2,3,0,0,0,255
+
+#NUMBERSPACING,0.6
+
+// 画像フォント,,ファイル名,横マス数（固定）,縦マス数（固定）
+#PARTS,FONT_S,img/font.png,12,7
+#PARTS,FONT_M,img/font_m.png,12,7
+
+// 選曲背景,,ファイル名
+#PARTS,SONGSELECT_BG,img/songselectbg.png
+
+// 難度☆,,ファイル名,横マス数,縦マス数
+#PARTS,SONGSELECT_STAR,img/levelstar.png,2,1

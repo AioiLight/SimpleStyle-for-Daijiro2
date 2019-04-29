@@ -1,0 +1,15 @@
+#TAIKOJIRO,0.95
+// 名前
+#NAME,default
+
+// 画面解像度,x,y
+#RESOLUTION,1280,720
+
+// 一人用
+#SINGLE,single.csv
+
+// 選曲画面
+#SONGSELECT,songselect.csv
+
+//音
+#SOUND,snd/sound.csv
